@@ -52,6 +52,8 @@ yarn dev
 pnpm dev
 Open your browser and navigate to http://localhost:5173
 📁 Project Structure
+
+```
 src/
 ├── assets/          # Static assets (images, fonts)
 ├── components/      # Reusable UI components
@@ -75,6 +77,8 @@ src/
 │   ├── Index.tsx   # Home page
 │   └── NotFound.tsx # 404 page
 └── App.tsx         # Main application component
+```
+
 🎨 Design System
 Colors: Professional color palette with primary and accent colors
 Typography: Clean, modern font stack for optimal readability
