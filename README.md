@@ -106,6 +106,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
  Add dark mode support
  Implement internationalization (i18n)
 📱 Contact
-For inquiries or support, please contact your-email@example.com
+For inquiries or support, please contact Vrushabhsatpute07@gmail.com
 
 Built with ❤️ using modern web technologies
