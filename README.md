@@ -1,181 +1,114 @@
-Orangery Ventures 🌱
-Empowering Innovation Through Smart Investments
-🚀 Project Overview
-Orangery Ventures is a modern web application designed to present a venture capital firm’s vision, investment approach, portfolio, and community impact. Built with React, TypeScript, Vite, and Tailwind CSS, it delivers a sleek, responsive, and interactive user experience.
+# Venture Capital Firm Website
 
-This project highlights a clean component-driven architecture, scalable UI design patterns, and accessibility features, making it a strong demonstration of modern frontend engineering.
+<div align="center">
+  <img src="public/og-image.png" alt="Venture Capital Firm" width="600"/>
+  
+  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+</div>
 
-✨ Key Features
-Hero Section: Engaging landing area with branding and mission statement
+## 🚀 Overview
 
-About Section: Firm overview and values presentation
+A modern, responsive website for a venture capital firm, built with cutting-edge web technologies to showcase investment philosophy, portfolio companies, and team expertise. The platform features a clean, professional design with smooth animations and interactive elements to engage potential founders and investors.
 
-Investment Approach: Explains strategies and decision-making framework
+## ✨ Features
 
-Community & Network: Showcases ecosystem and collaborative strength
+- **Modern UI/UX** with smooth scrolling and responsive design
+- **Interactive Sections** including Hero, Manifesto, and Investment Approach
+- **Performance Optimized** using Vite for lightning-fast loading
+- **Type-Safe** development with TypeScript
+- **Mobile-First** responsive design
+- **Beautiful Animations** for enhanced user engagement
+- **SEO Optimized** structure for better visibility
 
-Portfolio Section: Highlights funded startups/projects
+## 🛠️ Tech Stack
 
-Responsive Design: Optimized for desktop, tablet, and mobile
+- **Frontend Framework**: React 18
+- **Language**: TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui, Radix UI Primitives
+- **State Management**: React Query
+- **Routing**: React Router v6
+- **Icons**: Lucide React
+- **Form Handling**: React Hook Form
+- **Animation**: Framer Motion
 
-Reusable Components: Built with TypeScript + modular React components
+## 🏃‍♂️ Quick Start
 
-Modern UI: Styled with TailwindCSS and shadcn/ui for consistency and speed
-
-🏗️ Architecture
-Frontend Components
-Hero.tsx – Landing banner with call-to-action
-
-About.tsx – Firm introduction and values
-
-InvestmentApproach.tsx – Outlines methodology for investments
-
-Community.tsx – Details on partners, founders, and networks
-
-Portfolio.tsx – Grid/list showcasing venture portfolio
-
-Footer.tsx – Contact information and social links
-
-Styling
-TailwindCSS: Utility-first styling with responsive design
-
-shadcn/ui components: Cards, buttons, layout elements
-
-Lucide-react icons: Minimal and scalable vector icons
-
-🎯 User Experience Features
-Clean Navigation: Intuitive scrolling and section separation
-
-Responsive Layout: Adjusts seamlessly across screen sizes
-
-Accessible Design: Keyboard-friendly controls and ARIA roles
-
-Interactive UI: Hover effects, subtle transitions, and animations
-
-Scalable Structure: Easily extendable with new sections
-
-🚀 Getting Started
-Prerequisites
-Node.js (v18 or higher)
-
-npm or yarn
-
-Installation
-Clone the repository:
-
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/your-username/venture-capital-website.git](https://github.com/your-username/venture-capital-website.git)
+   cd venture-capital-website
+undefined
+Install dependencies
 bash
-Copy
-Edit
-git clone <repository-url>
-cd orangery-ventures
-Install dependencies:
-
-bash
-Copy
-Edit
 npm install
-Start the development server:
-
+# or
+yarn
+# or
+pnpm install
+Start the development server
 bash
-Copy
-Edit
 npm run dev
-Open your browser and navigate to:
-
-arduino
-Copy
-Edit
-http://localhost:5173
-Build for production:
-
-bash
-Copy
-Edit
-npm run build
-📖 How to Use
-Landing Page (Hero) – Learn about Orangery Ventures at a glance
-
-About Section – Explore the firm’s story and philosophy
-
-Investment Approach – Understand strategies and methodologies
-
-Portfolio – View selected projects/companies backed
-
-Community – Explore partnerships and ecosystems
-
-Footer – Access contact details and links
-
-🎨 UI/UX Highlights
-Typography & Spacing: Clear hierarchy and readability
-
-Animations: Smooth fade-ins and transitions with Framer Motion (if integrated)
-
-Consistency: Modular design system with reusable styles
-
-Mobile-First: Designed with mobile usability at core
-
-🔧 Technical Stack
-React 18 + TypeScript
-
-Vite (fast bundling & dev server)
-
-TailwindCSS (styling)
-
-shadcn/ui (UI components)
-
-lucide-react (icons)
-
+# or
+yarn dev
+# or
+pnpm dev
+Open your browser and navigate to http://localhost:5173
 📁 Project Structure
-css
-Copy
-Edit
-orangery-ventures/
-├── src/
-│   ├── components/
-│   │   ├── Hero.tsx
-│   │   ├── About.tsx
-│   │   ├── InvestmentApproach.tsx
-│   │   ├── Community.tsx
-│   │   ├── Portfolio.tsx
-│   │   ├── Footer.tsx
-│   │   └── ui/ (shadcn UI components)
-│   ├── App.tsx
-│   └── main.tsx
-├── index.html
-├── package.json
-└── README.md
+src/
+├── assets/          # Static assets (images, fonts)
+├── components/      # Reusable UI components
+│   ├── ui/         # shadcn/ui components
+│   ├── animations/ # Animation components
+│   ├── About.tsx   # About section
+│   ├── Community.tsx # Community section
+│   ├── Footer.tsx  # Footer component
+│   ├── FoundersInSearch.tsx # Founders section
+│   ├── Gap.tsx     # Spacing component
+│   ├── Header.tsx  # Navigation header
+│   ├── Hero.tsx    # Hero section
+│   ├── InvestmentApproach.tsx # Investment strategy
+│   └── Manifesto.tsx # Company manifesto
+├── hooks/          # Custom React hooks
+│   ├── use-mobile.tsx # Mobile detection
+│   └── use-toast.ts  # Toast notifications
+├── lib/            # Utility functions
+│   └── utils.ts    # Helper functions
+├── pages/          # Page components
+│   ├── Index.tsx   # Home page
+│   └── NotFound.tsx # 404 page
+└── App.tsx         # Main application component
+🎨 Design System
+Colors: Professional color palette with primary and accent colors
+Typography: Clean, modern font stack for optimal readability
+Spacing: Consistent spacing system using Tailwind's scale
+Breakpoints: Responsive design for all device sizes
+Animations: Smooth transitions and micro-interactions
+Accessibility: WCAG 2.1 compliant components
 🤝 Contributing
-Contributions are welcome!
+We welcome contributions! Please follow these steps:
 
 Fork the repository
-
-Create a feature branch (git checkout -b feature/YourFeature)
-
-Commit your changes (git commit -m 'Add some feature')
-
-Push to the branch (git push origin feature/YourFeature)
-
+Create a feature branch (git checkout -b feature/amazing-feature)
+Commit your changes (git commit -m 'Add some amazing feature')
+Push to the branch (git push origin feature/amazing-feature)
 Open a Pull Request
-
 📄 License
-This project is licensed under the MIT License – see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-🆘 Support
-For questions, feedback, or suggestions:
+🔮 Roadmap
+ Add interactive portfolio showcase
+ Implement founder application form
+ Create blog section for investment insights
+ Add team member profiles
+ Integrate with social media platforms
+ Add dark mode support
+ Implement internationalization (i18n)
+📱 Contact
+For inquiries or support, please contact your-email@example.com
 
-Open an issue on GitHub
-
-Propose improvements via Pull Request
-
-🔮 Future Enhancements
-Blog section for thought leadership
-
-CMS integration (e.g., Sanity/Contentful) for dynamic content
-
-Dark mode support
-
-Expanded portfolio grid with filters
-
-Team member profiles
-
-🔥 Orangery Ventures — A modern platform showcasing innovation, investments, and impact.
+Built with ❤️ using modern web technologies
